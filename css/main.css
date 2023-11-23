@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-family: DM Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+video.bg-video {
+  position: fixed;
+  top:0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+video {
+  object-fit: contain;
+  overflow: clip;
+}
+
+.coming-soon {
+  border-top: red,10px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.895) 55%,
+    rgba(0, 0, 0, 0.411) 40%
+  );
+}
+.coming-soon .comingsoon-content {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: ;
+}
+.comingsoon-content .container {
+  width: 80%;
+  right: 0;
+  margin-top: 20%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  font-style: italic;
+  line-height: 1;
+  font-family: "Tinos", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+}
+form {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.input input {
+  padding: 20px 30px 20px 30px;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.email {
+  width: 70%;
+}
+
+.submit {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: calc(1rem + 2px);
+  background-color: #2a5555;
+  border-color: #2a5555;
+}
+
+.socials-icons {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 9;
+  margin-left: 90%;
+  background-color: ;
+}
+
+.socials-icons .container {
+  margin-right: 10px;
+  margin-top: 25%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+}
+.socials-icons .container i {
+  padding: 30px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #212529;
+  font-size: 24px;
+}
